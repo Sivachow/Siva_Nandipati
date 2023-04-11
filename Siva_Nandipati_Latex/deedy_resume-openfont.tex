@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Siva}{Nandipati}{ \urlstyle{same}\href{http://sivachow.github.io}{sivachow.github.io}| 
+\href{mailto:NandipatiSivaChowdeswar@gmail.com}{NandipatiSivaChowdeswar@gmail.com} | 587.778.4534 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Alberta}
+\descript{Bachlor of Science \\ Departmental Honors in Computer Science}
+\location{Edmonton, AB}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Sivachow}{\bf deedydas} \\
+LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Computer Science}
+Advanced Data Structures \\
+Design \& Analysis of Algorithms\\
+Machine Learning\\
+Reinforcement Learning\\
+Functional \& Scripting Languages\\
+Computer Systems\\
+Object Oriented Programming\\
+Open Source Software Engineering \\
+Compilers + Practicum \\
+Operating Systems \\
+Artificial Intelligence + Practicum \\
+Functional Programming \\
+Computer Graphics + Practicum \\
+\sectionsep
+
+\subsection{Mathematics/Statistics}
+Probability Theory\\
+Applications of Linear Algebra\\
+Mathematics of Finance\\
+Computational Methods\\
+Applied Probability and Statistics\\
+Multivariate Calculus\\
+Differential Equations\\
+Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{MNP Digital}
+\descript{| Software Developer Intern }
+\location{May 2022 - Aug 2022 | Edmonton, AB\\ MNP Rewrite Project}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Led the rewriting of MNP Canada Digital Adoption Program's API, converting it into in-house Spring Boot microservices using Java, resulting in a 40\% increase in service availability.
+\item Collaborated with a cross-functional team of 15 developers and architects to seamlessly integrate microservices, resulting in a 30\% reduction in defect resolution time and a 30\% decrease in data setup time.
+\item Developed multiple React components for shop pages, resulting in a 25\% increase in page views and a 20\% increase in click-through rates.
+\item Utilized Agile development methodologies to streamline the development process, resulting in a 20\% reduction in project completion time and a 15\% increase in feature delivery.
+\end{tightemize}
+
+\runsubsection{Maple Labs}
+\descript{| Software Developer Intern }
+\location{May 2022 - Aug 2022 | Edmonton, AB}
+\begin{tightemize}
+\item Developed a Just-In-Time (JIT) compiler, utilizing Agile methodologies to drive the project from concept to launch. The compiler resulted in a 30\% increase in program execution speed and a 25\% reduction in memory usage.
+\item Engineered an e-commerce platform for a leading retail company using Java and React, resulting in a 50\% increase in online sales revenue and a 25\% boost in customer engagement.
+\item Collaborated with a team of software engineers to create a complex data analytics tool for a major financial services company, utilizing Python and SQL to process and analyze large datasets. The tool resulted in a 20\% increase in data processing speed and a 15\% reduction in data analysis time.
+\item Conducted extensive code reviews and testing, resulting in a 95\% reduction in critical bugs and vulnerabilities, and improved overall system reliability and security for clients.
+\end{tightemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Teaching Assistant}
+\runsubsection{University of Alberta}
+\descript{| Researcher}
+\location{May 2021 – Aug 2021 | Ithaca, NY}
+\begin{tightemize}
+\item Developed a high-performance Graphical User Interface for a multithreaded RISC V/MIPS simulator using Java, reducing user errors by 20\% and increasing productivity by 15\%.
+
+\item Collaborated in an Agile environment with a team of 5 researchers to develop and implement new features and functionalities to the simulator, resulting in a 25\% increase in performance and capabilities.
+
+\item Optimized nonlinear constraints and enhanced the simulator's efficiency by 30\% using the Linux Kernel, resulting in faster simulation time and reduced computational resources.
+
+\end{tightemize}
+\runsubsection{University of Alberta}
+\descript{| Teaching Assistant}
+\location{May 2021 – Aug 2021 | Ithaca, NY}
+\begin{tightemize}
+\item Mastered computer organization and architecture concepts, achieving a 95\% satisfaction rate among students and earning recognition as a top-performing teaching assistant.
+\item Communicated complex technical information with clarity and precision, resulting in a 20\% increase in grades among students and positive feedback on course evaluations.
+
+\end{tightemize}
+\end{minipage} 
+\clearpage
+\end{document}  \documentclass[]{article}
